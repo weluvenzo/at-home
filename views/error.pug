@@ -1,6 +1,8 @@
 extends layout
 
 block content
+  img(src="https://i.ibb.co/qJSnhTB/home-house-sad-frown-face-512.webp")
+  h1 Uh Oh! You Encountered an error. Here's a log of what happened:
   h1= message
   h2= error.status
   pre #{error.stack}

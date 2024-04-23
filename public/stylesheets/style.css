@@ -1,12 +1,14 @@
 .nav {
+  position: relative;
   justify-content: space-evenly;
   list-style: none;
   display: inline-flex;
   width: 100%;
   min-height: 10vh;
-  vertical-align: center;
+  horiz-align: center;
   flex-wrap: wrap;
-  margin: 0px;
+  margin: 0;
+  text-align: center;
   padding: unset;
   background: #A020F0;
 }
@@ -21,23 +23,35 @@ body{
   margin: 0px;
 }
 
-.iconcontainer{
+.Main{
   box-sizing: border-box;
-  align-content: center;
-  justify-content: center;
-  min-height: 90vh;
+  height: 90vh;
   background-image: linear-gradient(#eee, #A020F0);
-  width: 100%;
+  align-content: center;
+  justify-content: space-evenly;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: block;
+  margin: auto;
+  text-align: center;
 }
 
 img {
   border-radius: 10%;
-  max-height: 15%;
-  max-width: 15%;
 }
-.row{
+.row {
+  horiz-align: center;
+  justify-content: space-between;
 
 }
+.row img{
+  justify-content: space-between;
+}
+
+.navbar li{
+  vertical-align: center;
+}
+
 /*
 width: 100%;
 

@@ -1,0 +1,179 @@
+.nav {
+  position: relative;
+  justify-content: space-evenly;
+  list-style: none;
+  display: inline-flex;
+  width: 100%;
+  min-height: 10vh;
+  horiz-align: center;
+  flex-wrap: wrap;
+  margin: 0;
+  text-align: center;
+  padding: unset;
+  background: #A020F0;
+}
+a{
+  font-size: 26px;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+body{
+  margin: 0;
+}
+
+.Main{
+  box-sizing: border-box;
+  height: 90vh;
+  background-image: linear-gradient(#eee, #A020F0);
+  align-content: center;
+  justify-content: space-evenly;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+img {
+  border-radius: 10%;
+}
+.row {
+  horiz-align: center;
+  justify-content: space-between;
+
+}
+.row img{
+  justify-content: space-between;
+}
+
+.navbar li{
+  vertical-align: center;
+}
+
+.card{
+  /*body {*/
+  /*    padding: 50px;*/
+  /*    margin: 0;*/
+  /*    background: #f3f4f6;*/
+  /*    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;*/
+  /*}*/
+}
+
+/*
+
+
+body {
+    padding: 50px;
+    margin: 0;
+    background: #f3f4f6;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+    padding: 48px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.card{
+    background: white;
+    border-radius: 16px;
+    width: 350px;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-title {
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    top: 24px;
+    left: 24px;
+}
+
+.backdrop{
+    background: rgba(0,0,0,0.2);
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.card-header{
+    position:relative;
+}
+
+.card-body {
+    padding: 24px;
+    color: #111827;
+}
+
+.edit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.edit a {
+    text-decoration: none;
+    color: #00B7FF;
+}
+
+.category {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+.card-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.description {
+    margin-top: 16px;
+}
+
+.button {
+    display: block;
+    border-radius: 6px;
+    padding: 8px 16px;
+    text-decoration: none;
+    box-shadow: rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0) 0px, 0px, 0px, 0px, rgba(0,0,0,0.5) 0px 1px 2px 0px;
+    font-size: 14px;
+    line-height: 1.25rem;
+}
+
+.button-save {
+    background: #155E75;
+    color: white;
+    border: 1px solid #164R63;
+}
+
+.add-button-row {
+    display: block;
+    border-radius: 6px;
+    padding: 16px 16px;
+    text-decoration: none;
+    box-shadow: rgba(0,0,0,0) 0px 0px 0px 0px, rgba(0,0,0,0) 0px, 0px, 0px, 0px, rgba(0,0,0,0.5) 0px 1px 2px 0px;
+    font-size: 14px;
+    line-height: 1.25rem;
+}
+
+.main-header{
+    background: #242323;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+*/
+
+
+ 

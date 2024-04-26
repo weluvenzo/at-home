@@ -1,0 +1,33 @@
+include layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/events.css')
+    div.Main
+        include mixins/EventCard
+        div.container
+            div.add-button-row
+                a.button.save(href='/add') Add Event
+        div.container
+            form(action='/events' method='get')
+                div.form-input
+                    label(for= 'zipcode') zipcode
+                    select(id='zipcode' name='zipcode' autocomplete='off')
+                        each zipcode in zipcodes
+                            option(value=zipcode selected = (zipcode === searchZipcode)) #{zipcode}
+
+            each event in events
+                +EventCard(event)
+//style(type="text/css").
+//    input {
+//        position: absolute;
+//        top: 400px;
+//        left: 550px;
+//        max-width: 700px;
+//        width: 100%;
+//        background: rgba(255, 255, 255, 0.2);
+//        border-radius: 60px;
+//        padding: 10px 50px;
+//        backdrop-filter: blur(4px) saturate(180%);
+//    }
+
+

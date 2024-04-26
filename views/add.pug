@@ -1,0 +1,5 @@
+extends layout
+
+block content
+    include mixins/EventForm
+    +EventForm(event, '/add', 'add', 'Add Event')

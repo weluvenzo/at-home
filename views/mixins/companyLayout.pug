@@ -1,0 +1,21 @@
+mixin companyLayout(company, actionURL, title)
+
+    div.form-panel
+        div.header= title
+            form(action=actionURL method='post')
+                div.form-input
+                    label(for='name') Name:
+                    input(type='text' id='name' name='name' value=company.name)
+                div.form-input
+                    label(for='address') Address:
+                    select(id='address' name='address=' autocomplete='off')
+                label(for='zipcode') zipcode
+                    select(id='zipcode' name='zipcode=' autocomplete='off')
+                        each zipcode in zipcodes
+                            option(value=zipcode selected = (zipcode === company.zipcode)) #{zipcode}
+                div.form-input
+                    label(for='category') Category:
+                    textarea(id='category' name='category') #{company.category}
+                div.form-input
+                        label(for='hours') Hours:
+                        textarea(id='hours' name='hours') #{company.hours}

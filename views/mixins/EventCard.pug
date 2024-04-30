@@ -1,0 +1,56 @@
+mixin EventCard(event)
+    div.card
+        div.card-header
+            div.backdrop
+            div.card-title= event.name
+        div.card-body
+            div.edit
+                a(href=`/edit/${event.id}`) Edit
+            div.card-details
+                div.zipcode= event.zipcode
+                div.date= event.date
+                div.description= event.description
+style(type="text/css").
+
+
+    .card {
+        background-image: linear-gradient(#eee, #A020F0);
+        border-radius: 16px;
+        display: block;
+        margin: auto;
+        text-align: center;
+        width: 350px;
+        overflow: hidden;
+    }
+
+
+    .card-header {
+        width: 100%;
+        height: 75px;
+    }
+    .card-title {
+        color: white;
+        font-size: 32px;
+        top: 24px;
+        left: 24px;
+        position: absolute;
+
+    }
+    .backdrop {
+        background: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 75px;
+    }
+    .card-header {
+        position: relative;
+    }
+    .card-body {
+        padding: 10px;
+        color: #111827;
+    }
+    .description {
+        margin-top: 16px;
+    }

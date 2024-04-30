@@ -3,6 +3,7 @@
 block content
     include mixins/EventForm
     include layout
+div.Main
     +EventForm(event, `/edit/${event.id}`, 'Edit Event')
 
 //-

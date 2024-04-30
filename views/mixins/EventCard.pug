@@ -1,15 +1,16 @@
 mixin EventCard(event)
- div.card
-    div.card-header
-        div.backdrop
-        div.card-title= event.name
-    div.card-body
-        div.edit
-            a(href=`/edit/${event.id}`) Edit
-        div.card-details
-            div.zipcode= event.zipcode
-            div.date= event.date
-            div.description= event.description
+    div.card
+        div.card-header
+            div.backdrop
+            div.card-title= event.name
+        div.card-body
+            div.edit
+                a(href=`/edit/${event.id}`) Edit
+            div.card-details
+                div.zipcode= event.zipcode
+                div.location=event.location
+                div.date= event.date
+                div.description= event.description
 style(type="text/css").
 
 
@@ -17,7 +18,6 @@ style(type="text/css").
     background-image: linear-gradient(#eee, #A020F0);
     border-radius: 16px;
     display: block;
-    margin: auto;
     text-align: center;
     width: 350px;
     overflow: hidden;
@@ -30,10 +30,9 @@ style(type="text/css").
     }
     .card-title {
     color: white;
-    font-size: 32px;
-    top: 24px;
-    left: 24px;
+    font-size: 150%;
     position: absolute;
+    text-align: center;
 
     }
     .backdrop {
@@ -42,7 +41,7 @@ style(type="text/css").
     top: 0;
     bottom: 0;
     width: 100%;
-    height: 75px;
+    height: 90px;
     }
     .card-header {
     position: relative;
@@ -53,4 +52,18 @@ style(type="text/css").
     }
     .description {
     margin-top: 16px;
+    }
+    .zipcode{
+    margin-top: 16px;
+    }
+    .date {
+    margin-top: 16px;
+    }
+
+    .location {
+        margin-top: 16px;
+    }
+    .card-details {
+        align-items: center;
+        justify-content: space-between;
     }

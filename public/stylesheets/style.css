@@ -27,7 +27,6 @@ body{
   box-sizing: border-box;
   height: 90vh;
   background-image: linear-gradient(#eee, #A020F0);
-  align-content: center;
   justify-content: space-evenly;
   padding-top: 1%;
   padding-bottom: 1%;

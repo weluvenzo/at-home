@@ -1,5 +1,5 @@
 const{Event} = require('../models');
-const zipcodes= ['93706', '93710', '93725', '93722', '93705', '93721', '93727', '93701', '93712', '93726', '93711', '93704', '93703', '93612'];
+const zipcodes= ['93706', '93710', '93725', '93722', '93705', '93721', '93727', '93701', '93712', '93726', '93711', '93704', '93703', '93612', '93650', '93702','93703','93720','93723', '93728'];
 
 module.exports.viewAll = async function(req, res) {
     let searchZipcodes = ['All'];
@@ -80,8 +80,4 @@ module.exports.addEvent = async function (req, res) {
             zipcode:req.body.zipcode
         });
     res.redirect('/events')
-}
-
-function getRandomInt(max){
-    return Math.floor(Math.random() * max);
 }

@@ -5,9 +5,7 @@ block content
     div.Main
         include mixins/companyCard
         div.container
-            form(action='/company' method='get')
-                each CompanyInfo in companyInfoObj
-                    +comapanyCard(CompanyInfo)
+            form(action='/legalaid' method='post')
                 div.form-input
                     label(for= 'zipcode') zipcode
                     select(id='zipcode' name='zipcode' autocomplete='off')

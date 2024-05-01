@@ -24,7 +24,6 @@ module.exports.viewAll = async function(req, res) {
     }
     res.render('events', {events: events, zipcodes:searchZipcodes, searchZipcode, searchRandom}); //changed
 }
-
 module.exports.renderEditForm = async function (req, res) {
     const event = await Event.findByPk(req.params.id);
     res.render('edit', {event, zipcodes});
@@ -47,7 +46,6 @@ module.exports.updateEvent = async function (req,res) {
         });
     res.redirect('/events');
 }
-
 module.exports.deleteEvent = async function (req, res) {
     await Event.destroy(
         {

@@ -8,7 +8,7 @@ mixin EventForm(event, actionURL, title)
                     input(type='text' id='name' name='name' value=event.name maxlength="40")
                 div.form-input
                     label(for='location') Location:
-                    input(id='location' name='location' value=event.location maxlength="75")
+                    input(id='location' name='location' value=event.location maxlength="50")
                 div.form-input
                      label(for='zipcode') zipcode
                      select(id='zipcode' name='zipcode' autocomplete='off')

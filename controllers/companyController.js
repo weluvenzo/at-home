@@ -26,14 +26,25 @@ module.exports.companyViewAll = async function(req, res) {
 }
 
 module.exports.legalViewAll = async function(req, res) {
-    let searchlegal = req.query.category || 'Legal Aid';
-    let companyInfoObj;
-    if (searchlegal === 'Legal Aid') {
-        companyInfoObj = await CompanyInfo.findAll();
-    }
-    res.render('legalaid', {companyInfoObj: companyInfoObj, category:searchlegal}); //changed
+    let companyInfoObj = await CompanyInfo.findAll();
+    res.render('legalaid', {companyInfoObj}); //changed
 }
-
+module.exports.inhomeViewAll = async function(req, res) {
+    let companyInfoObj = await CompanyInfo.findAll();;
+    res.render('inhome', {companyInfoObj}); //changed
+}
+module.exports.housingViewAll = async function(req, res) {
+    let companyInfoObj = await CompanyInfo.findAll();;
+    res.render('housing', {companyInfoObj}); //changed
+}
+module.exports.fosteringViewAll = async function(req, res) {
+    let companyInfoObj = await CompanyInfo.findAll();;
+    res.render('fostering', {companyInfoObj}); //changed
+}
+module.exports.nutritionViewAll = async function(req, res) {
+    let companyInfoObj = await CompanyInfo.findAll();;
+    res.render('nutrition', {companyInfoObj}); //changed
+}
 function getRandomInt(max){
     return Math.floor(Math.random() * max);
 }

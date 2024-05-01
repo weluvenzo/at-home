@@ -5,6 +5,6 @@ block content
     div.Main
         include mixins/companyCard
         div.container
-            form(action='/company' method='get')
-                each CompanyInfo in companyInfoObj
+            each CompanyInfo in companyInfoObj
+                if(CompanyInfo.category.includes('Housing'))
                     +companyCard(CompanyInfo)

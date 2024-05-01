@@ -1,11 +1,10 @@
 include layout
 
 block content
-    div.main
-        div.card
-            div.card-header
-                div.backdrop
-                div.card-title Event Holder
-                img.card-header-image(src='placeholder')
-            div.card-body
-                div.description
+    link(rel='stylesheet', href='/stylesheets/events.css')
+    div.Main
+        include mixins/companyCard
+        div.container
+            each CompanyInfo in companyInfoObj
+                if(CompanyInfo.category.includes('Nutrition'))
+                    +companyCard(CompanyInfo)

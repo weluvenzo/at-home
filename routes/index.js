@@ -15,6 +15,7 @@ router.get('/cashaid', companyController.companyViewAll);
 router.get('/housing', controller.renderHousing);
 router.get('/inhome', controller.renderInHome);
 router.get('/legalaid', companyController.legalViewAll);
+router.post('/legalaid', companyController.legalViewAll);
 router.get('/nutrition', controller.renderNutrition);
 //router.get('/notifications', controller.renderNotification);
 router.get('/edit/:id', EventController.renderEditForm);

@@ -1,4 +1,10 @@
 include layout
 
 block content
-    div.main
+    link(rel='stylesheet', href='/stylesheets/events.css')
+    div.Main
+        include mixins/companyCard
+        div.container
+            form(action='/company' method='get')
+                each CompanyInfo in companyInfoObj
+                    +companyCard(CompanyInfo)

@@ -7,9 +7,4 @@ block content
         div.container
             form(action='/company' method='get')
                 each CompanyInfo in companyInfoObj
-                    +comapanyCard(CompanyInfo)
-                div.form-input
-                    label(for= 'zipcode') zipcode
-                    select(id='zipcode' name='zipcode' autocomplete='off')
-                        each zipcode in zipcodes
-                            option(value=zipcode) #{zipcode}
+                    +companyCard(CompanyInfo)

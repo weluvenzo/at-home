@@ -6,8 +6,5 @@ block content
         include mixins/companyCard
         div.container
             form(action='/legalaid' method='post')
-                div.form-input
-                    label(for= 'zipcode') zipcode
-                    select(id='zipcode' name='zipcode' autocomplete='off')
-                        each zipcode in zipcodes
-                            option(value=zipcode) #{zipcode}
+                each CompanyInfo in companyInfoObj
+                    +companyCard(CompanyInfo)

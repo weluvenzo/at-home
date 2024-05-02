@@ -5,7 +5,7 @@ mixin EventForm(event, actionURL, title)
             form(action=actionURL method='post')
                 div.form-input
                     label(for='name') Name:
-                    input(type='text' id='name' name='name' value=event.name maxlength="40")
+                    input(type='text' id='name' name='name' value=event.name maxlength="30")
                 div.form-input
                     label(for='location') Location:
                     input(id='location' name='location' value=event.location maxlength="50")
@@ -15,11 +15,11 @@ mixin EventForm(event, actionURL, title)
                          each zipcode in zipcodes
                              option(value=zipcode selected = (zipcode === event.zipcode)) #{zipcode}
                 div.form-input
-                    label(for='date') Date:
+                    label(for='date') Date(YYYY-MM-DD):
                     input(id='date' name='date' value=event.date )
                 div.form-input
                     label(for='description') Description:
-                    textarea(id='description' name='description') #{event.description}
+                    textarea(id='description' name='description' maxlength="500") #{event.description}
 
                 div.button-row
                     a.button.cancel(href='/events') Cancel

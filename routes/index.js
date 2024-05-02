@@ -15,7 +15,7 @@ router.get('/housing', companyController.housingViewAll);
 router.get('/inhome', companyController.inhomeViewAll);
 router.get('/legalaid', companyController.legalViewAll);
 router.get('/nutrition', companyController.nutritionViewAll);
-//router.get('/notifications', controller.renderNotification);
+router.get('/notifications', companyController.renderNotifications);
 router.get('/edit/:id', EventController.renderEditForm);
 router.post('/edit/:id', EventController.updateEvent);
 router.get('/delete/:id', EventController.deleteEvent);

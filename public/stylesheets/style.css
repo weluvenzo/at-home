@@ -20,7 +20,8 @@ a{
 }
 
 body{
-  margin: 0;
+  margin: 0px;
+  background-image: linear-gradient(#eee, #A020F0);
 }
 
 .Main{

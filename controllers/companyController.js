@@ -29,6 +29,9 @@ module.exports.legalViewAll = async function(req, res) {
     let companyInfoObj = await CompanyInfo.findAll();
     res.render('legalaid', {companyInfoObj}); //changed
 }
+module.exports.renderNotifications= function (req, res){
+    res.render('notifications')
+}
 module.exports.inhomeViewAll = async function(req, res) {
     let companyInfoObj = await CompanyInfo.findAll();;
     res.render('inhome', {companyInfoObj}); //changed
@@ -37,6 +40,7 @@ module.exports.housingViewAll = async function(req, res) {
     let companyInfoObj = await CompanyInfo.findAll();;
     res.render('housing', {companyInfoObj}); //changed
 }
+
 module.exports.fosteringViewAll = async function(req, res) {
     let companyInfoObj = await CompanyInfo.findAll();;
     res.render('fostering', {companyInfoObj}); //changed

@@ -1,4 +1,10 @@
 include layout
 
 block content
-    div.main
+    link(rel='stylesheet', href='/stylesheets/company.css')
+    div.Main
+        include mixins/companyCard
+        div.container
+            each CompanyInfo in companyInfoObj
+                if(CompanyInfo.category.includes('Fostering'))
+                    +companyCard(CompanyInfo)

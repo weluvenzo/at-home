@@ -1,5 +1,5 @@
 const{Event} = require('../models');
-const zipcodes= ['93706', '93710', '93725', '93722', '93705', '93721', '93727', '93701', '93712', '93726', '93711', '93704', '93703', '93612'];
+const zipcodes= ['93706', '93710', '93725', '93722', '93705', '93721', '93727', '93701', '93712', '93726', '93711', '93704', '93703', '93612', '93650', '93702','93703','93720','93723', '93728'];
 
 module.exports.viewAll = async function(req, res) {
     let searchZipcodes = ['All'];
@@ -24,7 +24,6 @@ module.exports.viewAll = async function(req, res) {
     }
     res.render('events', {events: events, zipcodes:searchZipcodes, searchZipcode, searchRandom}); //changed
 }
-
 module.exports.renderEditForm = async function (req, res) {
     const event = await Event.findByPk(req.params.id);
     res.render('edit', {event, zipcodes});
@@ -47,7 +46,6 @@ module.exports.updateEvent = async function (req,res) {
         });
     res.redirect('/events');
 }
-
 module.exports.deleteEvent = async function (req, res) {
     await Event.destroy(
         {
@@ -80,8 +78,4 @@ module.exports.addEvent = async function (req, res) {
             zipcode:req.body.zipcode
         });
     res.redirect('/events')
-}
-
-function getRandomInt(max){
-    return Math.floor(Math.random() * max);
 }

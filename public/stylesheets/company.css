@@ -1,0 +1,50 @@
+body {
+    background: #f3f4f6;
+
+}
+
+.container {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.edit{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 8px;
+}
+
+.edit a {
+    text-decoration: none;
+    color: #00B7FF;
+}
+
+.category {
+    color: #6b7280;
+    font-size: 18px;
+}
+
+.button-save {
+    background: #155E75;
+    color: white;
+    border: 1px solid #164R63;
+}
+
+.add-button-row {
+    background-color: #710586;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.main-header{
+    background: #242323;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

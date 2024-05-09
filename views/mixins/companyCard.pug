@@ -1,0 +1,69 @@
+mixin companyCard(companyInfo)
+    div.card
+        div.card-header
+            div.backdrop
+            div.card-title= companyInfo.name
+        div.card-body
+            div.card-details
+                div.address= companyInfo.address
+                div.zipcode= companyInfo.zipcode
+                div.category= companyInfo.category
+                div.hours= companyInfo.hours
+style(type="text/css").
+
+
+
+    .card {
+    background-image: linear-gradient(#eee, #A020F0);
+    border-radius: 16px;
+    display: block;
+    text-align: center;
+    width: 350px;
+    overflow: hidden;
+    }
+
+
+    .card-header {
+    width: 100%;
+    height: 75px;
+    }
+    .card-title {
+    color: white;
+    font-size: 150%;
+    position: absolute;
+    text-align: center;
+
+    }
+    .backdrop {
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    }
+    .card-header {
+    position: relative;
+    }
+    .card-body {
+    padding: 10px;
+    color: #111827;
+    }
+    .address {
+    margin-top: 16px;
+    }
+    .zipcode{
+    margin-top: 16px;
+    }
+    .category {
+        color: #eeeeee;
+        margin-top: 16px;
+    }
+
+    .hours {
+    margin-top: 16px;
+    }
+    .card-details {
+    align-items: center;
+    justify-content: space-between;
+    }

@@ -1,0 +1,10 @@
+include layout
+
+block content
+    link(rel='stylesheet', href='/stylesheets/events.css')
+    div.Main
+        include mixins/companyCard
+        div.container
+            each CompanyInfo in companyInfoObj
+                if(CompanyInfo.category.includes('Housing'))
+                    +companyCard(CompanyInfo)

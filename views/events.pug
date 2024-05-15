@@ -1,11 +1,12 @@
 include layout
 block content
     link(rel='stylesheet', href='/stylesheets/events.css')
-    div.Main
+    div.eventsMain
         include mixins/EventCard
         div.container
             div.add-button-row
                 a.button.save(href='/add') Add Event
+        br
         div.container
             form(action='/events' method='get')
             each event in events

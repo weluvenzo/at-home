@@ -39,6 +39,18 @@ body{
   text-align: center;
 }
 
+.eventsMain {
+  box-sizing: border-box;
+  height: 100%;
+  background-image: linear-gradient(#eee, #A020F0);
+  justify-content: space-evenly;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
 img {
   border-radius: 10%;
 }
@@ -54,8 +66,21 @@ img {
 .navbar li{
   vertical-align: center;
 }
+.card-title {
+  padding-top: 15px;
+  padding-left: 15px;
+}
+.container {
+  align-content: center;
+  align-items: center;
+  align-self: center;
+  justify-content: center;
+  justify-self: center;
+  justify-items: center;
 
-.card{
+}
+
+/*.card{
   /*body {*/
   /*    padding: 50px;*/
   /*    margin: 0;*/

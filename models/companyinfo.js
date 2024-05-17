@@ -22,7 +22,8 @@ module.exports = (sequelize, DataTypes) => {
     },
     zipcode: DataTypes.INTEGER,
     category: DataTypes.STRING,
-    hours: DataTypes.STRING
+    hours: DataTypes.STRING,
+    url: DataTypes.STRING
   }, {
     sequelize,
     modelName: 'CompanyInfo',

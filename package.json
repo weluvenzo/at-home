@@ -17,7 +17,8 @@
     "pg": "^8.11.5",
     "pg-hstore": "^2.3.4",
     "pug": "^3.0.2",
-    "sequelize": "^6.37.2"
+    "sequelize": "^6.37.2",
+    "tailwind": "^4.0.0"
   },
   "devDependencies": {
     "sequelize-cli": "^6.6.2"

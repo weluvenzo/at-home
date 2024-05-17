@@ -11,7 +11,7 @@
   margin: 0;
   text-align: center;
   padding: unset;
-  background: #A020F0;
+  background: 	#b081ff;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 a{
@@ -24,25 +24,12 @@ a{
 
 body{
   margin: 0px;
-  background-image: linear-gradient(#eee, #A020F0);
 }
 
 .Main{
   box-sizing: border-box;
   height: 90vh;
-  background-image: linear-gradient(#eee, #A020F0);
-  justify-content: space-evenly;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-
-.eventsMain {
-  box-sizing: border-box;
-  height: 100%;
-  background-image: linear-gradient(#eee, #A020F0);
+  background:#e6e1f9;
   justify-content: space-evenly;
   padding-top: 1%;
   padding-bottom: 1%;
@@ -77,8 +64,11 @@ img {
   justify-content: center;
   justify-self: center;
   justify-items: center;
-
+  horiz-align: center;
+  vertical-align: center;
 }
+
+
 
 /*.card{
   /*body {*/
@@ -87,7 +77,7 @@ img {
 /*    background: #f3f4f6;*/
 /*    */
 /*}*/
-}
+
 
 /*
 

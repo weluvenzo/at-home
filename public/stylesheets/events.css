@@ -3,6 +3,18 @@ body {
     font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+.eventsMain{
+    box-sizing: border-box;
+    height: 90vh;
+    background: #e6e1f9;
+    justify-content: space-evenly;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
 .container {
     display: flex;
     gap: 5px;

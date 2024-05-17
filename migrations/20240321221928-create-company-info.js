@@ -33,6 +33,10 @@ module.exports = {
         allowNull: false,
         type: Sequelize.DATE
       }
+      url{
+        allowNull: true,
+        type: Sequelize.STRING
+      }
     });
   },
   async down(queryInterface, Sequelize) {
